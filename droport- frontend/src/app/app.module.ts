@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AgmCoreModule } from '@agm/core';
-import {FormsModule} from '@angular/forms'
+import { FormsModule} from '@angular/forms'
+import { HttpClientModule} from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -19,6 +19,7 @@ import { CusReqHistoryComponent } from './view/customer/cus-req-history/cus-req-
 import { CusReqViewComponent } from './view/customer/cus-req-view/cus-req-view.component';
 import { OwnMainPageComponent } from './view/owner/own-main-page/own-main-page.component';
 import { PilMainPageComponent } from './view/pilot/pil-main-page/pil-main-page.component';
+import { OwnRegComponent } from './view/owner/own-reg/own-reg.component';
 
 
 const appRoutes: Routes = [
@@ -34,6 +35,7 @@ const appRoutes: Routes = [
   { path: 'cus_req_view', component: CusReqViewComponent },
   { path: 'pli_main_page', component: PilMainPageComponent },
   { path: 'own_main_page', component: OwnMainPageComponent },
+  { path: 'own_reg', component:OwnRegComponent}
  
 
 ]
@@ -55,11 +57,12 @@ const appRoutes: Routes = [
     CusReqViewComponent,
     OwnMainPageComponent,
     PilMainPageComponent,
+    OwnRegComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
     BrowserModule,
-    AgmCoreModule.forRoot({apiKey: 'AIzaSyCGseuJ9UA9Yo9_A11srUTH6sgSHkuRUPw' }),
+    HttpClientModule,
     FormsModule
     
   ],

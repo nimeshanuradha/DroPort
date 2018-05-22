@@ -12,4 +12,8 @@ export class OwnMainPageComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  get_owner_data(own_reg){
+  }
+
 }

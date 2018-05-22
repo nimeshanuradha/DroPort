@@ -16,6 +16,13 @@ export class CusNewReqComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  get_req_data(cus_new_req: NgForm):void{
+    console.log(cus_new_req.value)
+  }
+
 }
+
+
 
 
