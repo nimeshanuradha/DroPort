@@ -7,6 +7,8 @@ request_routes.get('/',(req,res)=>{
 
 request_routes.get('/asd',(req,res)=>{
     console.log('routes works in asd')
+   
+
     
     //customer/cus-new-re/cus-new-req.component.html
 
